@@ -7,8 +7,9 @@ window.mobileCheck = function() {
 const canvas = document.querySelector("canvas");
 const context = canvas.getContext("2d");
 
-canvas.width = window.mobileCheck() ? window.innerWidth + 50 : window.innerWidth;
+canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
+
 
 window.addEventListener("resize", function () {
   canvas.width = window.innerWidth ;
