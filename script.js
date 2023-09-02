@@ -194,7 +194,8 @@ function locomotive() {
 ./background/back-00144.jpg
 ./background/back-00145.jpg
 ./background/back-00146.jpg
-./background/back-00147.jpg./background/back-00148.jpg
+./background/back-00147.jpg
+./background/back-00148.jpg
 ./background/back-00149.jpg
 ./background/back-00150.jpg
 ./background/back-00151.jpg
@@ -352,33 +353,30 @@ function locomotive() {
     start: `top top`,
     end: `600% top`,
   });
+  ScrollTrigger.create({
+    trigger: "#page1>canvas",
+    pin: true,
+    // markers:true,
+    scroller: `#main`,
+    start: `top top`,
+    end: `600% top`,
+  });
+  ScrollTrigger.create({
+    trigger: "#page2>canvas",
+    pin: true,
+    // markers:true,
+    scroller: `#main`,
+    start: `top top`,
+    end: `600% top`,
+  });
+  ScrollTrigger.create({
+    trigger: "#page3>canvas",
+    pin: true,
+    // markers:true,
+    scroller: `#main`,
+    start: `top top`,
+    end: `600% top`,
+  });
   
   
-  
-  gsap.to("#page1",{
-    scrollTrigger:{
-      trigger:`#page1`,
-      start:`top top`,
-      end:`bottom top`,
-      pin:true,
-      scroller:`#main`
-    }
-  })
-  gsap.to("#page2",{
-    scrollTrigger:{
-      trigger:`#page2`,
-      start:`top top`,
-      end:`bottom top`,
-      pin:true,
-      scroller:`#main`
-    }
-  })
-  gsap.to("#page3",{
-    scrollTrigger:{
-      trigger:`#page3`,
-      start:`top top`,
-      end:`bottom top`,
-      pin:true,
-      scroller:`#main`
-    }
-  })
+
