@@ -8,6 +8,7 @@ html,body{
     height: 100%;
     width: 100%;
 }
+
 #main{
     position: relative;
     overflow: hidden;
@@ -23,7 +24,16 @@ html,body{
     height: 100vh;
     width: 100vw;
     background-color: #7c7c7c;
+    display: flex; /* Use flexbox to control spacing */
+    justify-content: space-between; /* Add space between child elements */
+    align-items: center; 
+    -webkit-text-stroke: 0.1px black;
+    text-shadow: 2px 2px 0 black;
 
+}
+#right-text {
+    width: 45%; /* Adjust the width as needed */
+    padding: 20px; /* Add padding to create space */
 }
 #page2{
     position: relative;
@@ -211,13 +221,43 @@ canvas{
 }
 #page1>#right-text>h3{
     font-weight: 400;
-    color: #7c7c7c;
+    color:#00ffd5;
     z-index: 2;
+    font-size: 30px;
+    -webkit-text-stroke: 0.1px black;
+    text-shadow: 2px 2px 0 black;
 }
 #page1>#right-text>h1{
     line-height: 1.5;
     font-size: 50px;
     z-index: 2;
+    color:#00ffd5; 
+    -webkit-text-stroke: 0.1px black;
+    text-shadow: 2px 2px 0 black;
+
+}
+#page1>#right-text>h4{
+    line-height: 1.5;
+    font-size: 50px;
+    z-index: 2;
+    color: #7c7c7c;
+    -webkit-text-stroke: 0.1px black;
+    text-shadow: 2px 2px 0 black;
+}#page1>#right-text>h5{
+    line-height: 1.5;
+    font-size: 50px;
+    z-index: 2;
+    color:#00ffd5;
+    -webkit-text-stroke: 0.1px black;
+    text-shadow: 2px 2px 0 black;
+}
+#page1>#right-text>h6{
+    line-height: 1.5;
+    font-size: 50px;
+    z-index: 2;
+    color: #7c7c7c;
+    -webkit-text-stroke: 0.1px black;
+    text-shadow: 2px 2px 0 black;
 }
 #page1>#left-text{
     position: absolute;
@@ -236,9 +276,67 @@ canvas{
     font-weight: 400;
     z-index: 2;
 }
+#page1>#text1{
+    position: relative;
+    top: 120%;
+    left: 11%;
+    z-index: 2;
+    font-size: 50px;
+    color: #eeeeee;
+
+}
+@media (max-width: 1334px) {
+    #page1 > #text1 {
+        top: 120%; /* Reset the top positioning */
+        left: 11%; /* Reset the left positioning */
+        z-index:2;
+        font-size: 20px; /* Adjust the font size for mobile */
+    }
+@media (max-width: 1012px) {
+        #page1 > #text1 {
+            top: 160%; /* Reset the top positioning */
+            left: 11%; /* Reset the left positioning */
+            z-index:2;
+            font-size: 30px; /* Adjust the font size for mobile */
+        }
+    
+}
+@media (max-width: 540px) {
+            #page1 > #text1 {
+                top: 150%; /* Reset the top positioning */
+                left: 11%; /* Reset the left positioning */
+                z-index:2;
+                font-size: 20px; /* Adjust the font size for mobile */
+            }
+        
+    }
+}@media (max-width: 506px) {
+    #page1 > #text1 {
+        top: 170%; /* Reset the top positioning */
+        left: 11%; /* Reset the left positioning */
+        z-index:2;
+        font-size: 20px; /* Adjust the font size for mobile */
+    }
+}  
+@media (max-width: 393px) {
+    #page1 > #text1 {
+        top: 180%; /* Reset the top positioning */
+        left: 11%; /* Reset the left positioning */
+        z-index:2;
+        font-size: 20px; /* Adjust the font size for mobile */
+    }
+}
+@media (max-width: 375px) {
+    #page1 > #text1 {
+        top: 170%; /* Reset the top positioning */
+        left: 11%; /* Reset the left positioning */
+        z-index:2;
+        font-size: 20px; /* Adjust the font size for mobile */
+    }
+}
 #page2>#text1{
-    position: absolute;
-    top: 30%;
+    position:relative;
+    top: 120%;
     left: 10%;
     z-index: 2;
 }
@@ -281,3 +379,84 @@ canvas{
     z-index: 2;
 
 }
+#right-text h3 {
+    transform: scale(1); /* Initial state - no scaling */
+    transition: transform 0.5s ease; /* Add smooth transition */
+}
+
+#right-text h3:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+#right-text h1:hover {
+    background-color:#c0c0c080; /* Change background color on hover */
+    transition: color 0.3s, background-color 0.3s;/* Add smooth transition */
+}
+
+#right-text h2:hover {
+    background-color:#7c7c7c; /* Change background color on hover */
+    transition: color 0.3s, background-color 0.3s;/* Add smooth transition */
+}
+
+#right-text h4:hover {
+    background-color:#00ffd5d5; /* Change background color on hover */
+    transition: color 0.3s, background-color 0.3s; /* Add smooth transition */
+}
+
+#right-text h5:hover {
+    background-color:#c0c0c080; /* Change background color on hover */
+    transition: color 0.3s, background-color 0.3s;/* Add smooth transition */
+}
+
+#right-text h6:hover {
+    background-color:#00ffd5d5; /* Change background color on hover */
+    transition: color 0.3s, background-color 0.3s;/* Add smooth transition */
+}
+
+
+
+
+#page1 > #text1 {
+    position: relative;
+    top: 120%;
+    left: 11%;
+    z-index: 2;
+    font-size: 50px;
+    cursor: pointer; /* Add a pointer cursor to indicate interactivity */
+    transition: transform 0.5s ease; /* Add a smooth transition for the animation */
+}
+
+#page1 > #text1:hover {
+    transform: translateX(10%); /* Move the text to the right on hover */
+}
+
+#page1 > #text1::before {
+    content: "EVERY PIECE OF MEDIA ON THIS WEBSITE IS AI GENERATED , WE WILL BE USING THE SAME TECH FOR YOUR AD CAMPAIGN,KEEP SCROLLING AND FIND OUT MORE!"; /* The additional text to display */
+    position: absolute;
+    top: 10;
+    right: 2000%; /* Position it even further to the left of the text */
+    opacity: 0; /* Initially make it transparent */
+    background-color:#000; /* Background color for additional text */
+    padding: 200px;
+    font-size: 20px;
+    z-index: 1;
+    transition: transform 0.5s ease, opacity 0.3s ease; /* Add a smooth transition */
+}
+
+#page1 > #text1:hover::before {
+    right: 0; /* Move the additional text in from the right on hover */
+    opacity: 1; /* Make it fully visible on hover */
+}
+
+.custom-heading {
+    color: #7c7c7c; /* Set the base color to #7c7c7c */
+    font-size: 50px; /* You can adjust the font size as needed */
+    text-decoration: none; /* Remove underline by default */
+    transition: color 0.3s ease, text-decoration 0.3s ease, transform 0.3s ease;
+}
+
+.custom-heading:hover {
+    color: #00ffd5; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
