@@ -46,6 +46,7 @@ html,body{
     height: 100vh;
     width: 100vw;
     background-color: #7c7c7c;
+    top: 200%;
 }
 #page4{
     position: relative;
@@ -215,10 +216,11 @@ canvas{
 
 #page1>#right-text{
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 20%;
+    left: 9%;
     z-index: 2;
 }
+
 #page1>#right-text>h3{
     font-weight: 400;
     color:#00ffd5;
@@ -276,10 +278,10 @@ canvas{
     font-weight: 400;
     z-index: 2;
 }
-#page1>#text1{
+#page2>#text1{
     position: relative;
-    top: 120%;
-    left: 11%;
+    top: 10%;
+    left: 9%;
     z-index: 2;
     font-size: 50px;
     color: #eeeeee;
@@ -288,14 +290,14 @@ canvas{
 @media (max-width: 1334px) {
     #page1 > #text1 {
         top: 120%; /* Reset the top positioning */
-        left: 11%; /* Reset the left positioning */
+        left: 9%; /* Reset the left positioning */
         z-index:2;
         font-size: 20px; /* Adjust the font size for mobile */
     }
 @media (max-width: 1012px) {
         #page1 > #text1 {
             top: 160%; /* Reset the top positioning */
-            left: 11%; /* Reset the left positioning */
+            left: 9%; /* Reset the left positioning */
             z-index:2;
             font-size: 30px; /* Adjust the font size for mobile */
         }
@@ -304,7 +306,7 @@ canvas{
 @media (max-width: 540px) {
             #page1 > #text1 {
                 top: 150%; /* Reset the top positioning */
-                left: 11%; /* Reset the left positioning */
+                left: 9%; /* Reset the left positioning */
                 z-index:2;
                 font-size: 20px; /* Adjust the font size for mobile */
             }
@@ -313,7 +315,7 @@ canvas{
 }@media (max-width: 506px) {
     #page1 > #text1 {
         top: 170%; /* Reset the top positioning */
-        left: 11%; /* Reset the left positioning */
+        left: 9%; /* Reset the left positioning */
         z-index:2;
         font-size: 20px; /* Adjust the font size for mobile */
     }
@@ -321,7 +323,7 @@ canvas{
 @media (max-width: 393px) {
     #page1 > #text1 {
         top: 180%; /* Reset the top positioning */
-        left: 11%; /* Reset the left positioning */
+        left: 9%; /* Reset the left positioning */
         z-index:2;
         font-size: 20px; /* Adjust the font size for mobile */
     }
@@ -329,7 +331,7 @@ canvas{
 @media (max-width: 375px) {
     #page1 > #text1 {
         top: 170%; /* Reset the top positioning */
-        left: 11%; /* Reset the left positioning */
+        left: 9%; /* Reset the left positioning */
         z-index:2;
         font-size: 20px; /* Adjust the font size for mobile */
     }
@@ -364,7 +366,7 @@ canvas{
 }
 #page3>#text3{
     position: absolute;
-    top: 40%;
+    top: 200%;
     right: 10%;
     text-align: end;
     z-index: 2;
@@ -417,10 +419,11 @@ canvas{
 
 #page1 > #text1 {
     position: relative;
-    top: 120%;
-    left: 11%;
+    top: 200%;
+    left: 9%;
     z-index: 2;
     font-size: 50px;
+    color:#eeeeee;
     cursor: pointer; /* Add a pointer cursor to indicate interactivity */
     transition: transform 0.5s ease; /* Add a smooth transition for the animation */
 }
@@ -459,4 +462,43 @@ canvas{
     text-decoration: underline; /* Underline on hover */
     transform: scale(1.1); /* Enlarge on hover */
 }
-
+.end_this{
+    line-height: 1.5;
+    font-size: 50px;
+    z-index: 2;
+    -webkit-text-stroke: 0.1px black;
+    text-shadow: 2px 2px 0 black;
+    position: absolute;
+    top: 40%;
+    right: 17%;
+    text-align: end;
+    z-index: 2;
+}
+.collab{
+    line-height: 1.5;
+    font-size: 100px;
+    z-index: 2;
+    -webkit-text-stroke: 0.1px black;
+    text-shadow: 2px 2px 0 black;
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    text-align: end;
+    z-index: 2;
+}
+.collab img {
+    width: 200%; /* Set the width of the image to 150 pixels */
+    height: auto; /* Maintain the original aspect ratio */
+}
+.end_thi{
+    line-height: 1.5;
+    font-size: 50px;
+    z-index: 2;
+    -webkit-text-stroke: 0.1px black;
+    text-shadow: 2px 2px 0 black;
+    position: absolute;
+    top: 40%;
+    right: 32%;
+    text-align:left;
+    z-index: 2;
+}
