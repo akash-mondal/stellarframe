@@ -469,8 +469,8 @@ canvas{
     -webkit-text-stroke: 0.1px black;
     text-shadow: 2px 2px 0 black;
     position: absolute;
-    top: 40%;
-    right: 17%;
+    top: 1%;
+    right: 35%;
     text-align: end;
     z-index: 2;
 }
