@@ -1,4 +1,9 @@
+function redirectToGitHubRepo() {
+  window.location.href = "https://github.com/akash-mondal/StellarFramesDemos";
+}
 
+// Add a click event listener to the button
+document.getElementById("github-button").addEventListener("click", redirectToGitHubRepo);
 
 window.mobileCheck = function() {
   let check = false;
