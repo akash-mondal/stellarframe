@@ -474,7 +474,7 @@ canvas{
     text-align: end;
     z-index: 2;
 }
-.collab{
+.collab {
     line-height: 1.5;
     font-size: 100px;
     z-index: 2;
@@ -485,12 +485,17 @@ canvas{
     right: 50%;
     text-align: end;
     z-index: 2;
+    transition: transform 0.3s ease-in-out;
+}
+
+.collab:hover {
+    transform: scale(1.1);
 }
 .collab img {
     width: 200%; /* Set the width of the image to 150 pixels */
     height: auto; /* Maintain the original aspect ratio */
 }
-.end_thi{
+.end_thi {
     line-height: 1.5;
     font-size: 50px;
     z-index: 2;
@@ -499,6 +504,11 @@ canvas{
     position: absolute;
     top: 40%;
     right: 32%;
-    text-align:left;
+    text-align: left;
     z-index: 2;
+    transition: transform 0.3s ease-in-out;
+}
+
+.end_thi:hover {
+    transform: scale(1.1);
 }
